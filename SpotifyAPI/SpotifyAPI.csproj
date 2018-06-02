@@ -63,6 +63,8 @@
     <Compile Include="Local\VolumeMixerControl.cs" />
     <Compile Include="ProxyConfig.cs" />
     <Compile Include="Web\Auth\WebAPIFactory.cs" />
+    <Compile Include="Web\Enums\KeyType.cs" />
+    <Compile Include="Web\Enums\ModeType.cs" />
     <Compile Include="Web\Enums\RepeatState.cs" />
     <Compile Include="Web\Enums\TimeRangeType.cs" />
     <Compile Include="Web\IClient.cs" />

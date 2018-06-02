@@ -5,6 +5,9 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Windows.Forms;
+using SpotifyAPI.Web;
+using SpotifyAPI.Web.Enums;
+using SpotifyAPI.Web.Models;
 
 namespace SpotifyAPI.Example
 {
@@ -107,6 +110,37 @@ namespace SpotifyAPI.Example
 
             bigAlbumPicture.Image = track.AlbumResource != null ? await track.GetAlbumArtAsync(AlbumArtSize.Size640, _config.ProxyConfig) : null;
             smallAlbumPicture.Image = track.AlbumResource != null ? await track.GetAlbumArtAsync(AlbumArtSize.Size160, _config.ProxyConfig) : null;
+
+            SpotifyWebAPI swa = WebControl._spotify;
+            if (swa != null)
+            {
+                AudioFeatures af = swa.GetAudioFeatures(uri?.Id);
+                // int i = int.Parse(af.Acousticness.ToString());
+                FloatToTrackbar(af.Acousticness, tbarAcousticness);
+                FloatToTrackbar(af.Danceability, tbarDanceability);
+                FloatToTrackbar(af.Energy, tbarEnergy);
+                FloatToTrackbar(af.Instrumentalness, tbarInstrumentalness);
+                FloatToTrackbar(af.Liveness,tbarLiveness);
+                FloatToTrackbar(af.Speechiness,tbarSpeechiness);
+
+                FloatToTrackbar(af.Tempo/100,tbarTempo);
+                FloatToTrackbar(af.Loudness,tbarLoudness);
+                FloatToTrackbar(af.Valence, tbarValence);
+
+                txtKey.Text = String.Format("{0} {1}", Enum.GetName(typeof(KeyType), af.Key),Enum.GetName(typeof(ModeType),af.Mode));
+                txtTime.Text = af.TimeSignature.ToString();
+
+
+            }
+
+
+        }
+
+        private void FloatToTrackbar(double floatValue, TrackBar target)
+
+        {
+            double displayValue = Math.Round(floatValue * 100, 2);
+            target.Value = int.Parse(Math.Round(displayValue, 0).ToString());
         }
 
         public void UpdatePlayingStatus(bool playing)

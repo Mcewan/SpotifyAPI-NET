@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bigAlbumPicture = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.volumeMixerLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -75,22 +74,51 @@
             this.proxyHostTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.applyProxyBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.bigAlbumPicture)).BeginInit();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bigAlbumPicture = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tbarAcousticness = new System.Windows.Forms.TrackBar();
+            this.tbarDanceability = new System.Windows.Forms.TrackBar();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tbarEnergy = new System.Windows.Forms.TrackBar();
+            this.label18 = new System.Windows.Forms.Label();
+            this.tbarInstrumentalness = new System.Windows.Forms.TrackBar();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tbarLiveness = new System.Windows.Forms.TrackBar();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tbarLoudness = new System.Windows.Forms.TrackBar();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbarSpeechiness = new System.Windows.Forms.TrackBar();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tbarTempo = new System.Windows.Forms.TrackBar();
+            this.label23 = new System.Windows.Forms.Label();
+            this.tbarValence = new System.Windows.Forms.TrackBar();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtKey = new System.Windows.Forms.TextBox();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.trackInfoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smallAlbumPicture)).BeginInit();
             this.proxyGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.proxyPortUpDown)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bigAlbumPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarAcousticness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarDanceability)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarEnergy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarInstrumentalness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarLiveness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarLoudness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarSpeechiness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarTempo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarValence)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bigAlbumPicture
-            // 
-            this.bigAlbumPicture.Location = new System.Drawing.Point(407, 93);
-            this.bigAlbumPicture.Name = "bigAlbumPicture";
-            this.bigAlbumPicture.Size = new System.Drawing.Size(560, 560);
-            this.bigAlbumPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bigAlbumPicture.TabIndex = 2;
-            this.bigAlbumPicture.TabStop = false;
             // 
             // groupBox1
             // 
@@ -609,18 +637,298 @@
             this.applyProxyBtn.UseVisualStyleBackColor = true;
             this.applyProxyBtn.Click += new System.EventHandler(this.applyProxyBtn_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(408, 94);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(553, 559);
+            this.tabControl1.TabIndex = 6;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.bigAlbumPicture);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(545, 533);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Album Art";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.txtTime);
+            this.tabPage2.Controls.Add(this.label26);
+            this.tabPage2.Controls.Add(this.txtKey);
+            this.tabPage2.Controls.Add(this.label25);
+            this.tabPage2.Controls.Add(this.tbarValence);
+            this.tabPage2.Controls.Add(this.label24);
+            this.tabPage2.Controls.Add(this.tbarTempo);
+            this.tabPage2.Controls.Add(this.label23);
+            this.tabPage2.Controls.Add(this.tbarSpeechiness);
+            this.tabPage2.Controls.Add(this.label22);
+            this.tabPage2.Controls.Add(this.tbarLoudness);
+            this.tabPage2.Controls.Add(this.label21);
+            this.tabPage2.Controls.Add(this.tbarLiveness);
+            this.tabPage2.Controls.Add(this.label20);
+            this.tabPage2.Controls.Add(this.tbarInstrumentalness);
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.tbarEnergy);
+            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.tbarDanceability);
+            this.tabPage2.Controls.Add(this.label17);
+            this.tabPage2.Controls.Add(this.tbarAcousticness);
+            this.tabPage2.Controls.Add(this.label16);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(545, 533);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Audio Features";
+            // 
+            // bigAlbumPicture
+            // 
+            this.bigAlbumPicture.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bigAlbumPicture.Location = new System.Drawing.Point(3, 3);
+            this.bigAlbumPicture.Name = "bigAlbumPicture";
+            this.bigAlbumPicture.Size = new System.Drawing.Size(539, 527);
+            this.bigAlbumPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bigAlbumPicture.TabIndex = 3;
+            this.bigAlbumPicture.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(7, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(73, 13);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Acousticness:";
+            // 
+            // tbarAcousticness
+            // 
+            this.tbarAcousticness.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarAcousticness.LargeChange = 10;
+            this.tbarAcousticness.Location = new System.Drawing.Point(111, 10);
+            this.tbarAcousticness.Maximum = 100;
+            this.tbarAcousticness.Name = "tbarAcousticness";
+            this.tbarAcousticness.Size = new System.Drawing.Size(413, 45);
+            this.tbarAcousticness.SmallChange = 5;
+            this.tbarAcousticness.TabIndex = 1;
+            // 
+            // tbarDanceability
+            // 
+            this.tbarDanceability.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarDanceability.LargeChange = 10;
+            this.tbarDanceability.Location = new System.Drawing.Point(111, 61);
+            this.tbarDanceability.Maximum = 100;
+            this.tbarDanceability.Name = "tbarDanceability";
+            this.tbarDanceability.Size = new System.Drawing.Size(413, 45);
+            this.tbarDanceability.SmallChange = 5;
+            this.tbarDanceability.TabIndex = 3;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(7, 65);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(68, 13);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Danceability:";
+            // 
+            // tbarEnergy
+            // 
+            this.tbarEnergy.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarEnergy.LargeChange = 10;
+            this.tbarEnergy.Location = new System.Drawing.Point(111, 112);
+            this.tbarEnergy.Maximum = 100;
+            this.tbarEnergy.Name = "tbarEnergy";
+            this.tbarEnergy.Size = new System.Drawing.Size(413, 45);
+            this.tbarEnergy.SmallChange = 5;
+            this.tbarEnergy.TabIndex = 5;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(7, 116);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(43, 13);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "Energy:";
+            // 
+            // tbarInstrumentalness
+            // 
+            this.tbarInstrumentalness.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarInstrumentalness.LargeChange = 10;
+            this.tbarInstrumentalness.Location = new System.Drawing.Point(111, 169);
+            this.tbarInstrumentalness.Maximum = 100;
+            this.tbarInstrumentalness.Name = "tbarInstrumentalness";
+            this.tbarInstrumentalness.Size = new System.Drawing.Size(413, 45);
+            this.tbarInstrumentalness.SmallChange = 5;
+            this.tbarInstrumentalness.TabIndex = 7;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(7, 173);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 13);
+            this.label19.TabIndex = 6;
+            this.label19.Text = "Instrumentalness";
+            // 
+            // tbarLiveness
+            // 
+            this.tbarLiveness.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarLiveness.LargeChange = 10;
+            this.tbarLiveness.Location = new System.Drawing.Point(111, 220);
+            this.tbarLiveness.Maximum = 100;
+            this.tbarLiveness.Name = "tbarLiveness";
+            this.tbarLiveness.Size = new System.Drawing.Size(413, 45);
+            this.tbarLiveness.SmallChange = 5;
+            this.tbarLiveness.TabIndex = 9;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(7, 224);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(49, 13);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "Liveness";
+            // 
+            // tbarLoudness
+            // 
+            this.tbarLoudness.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarLoudness.LargeChange = 10;
+            this.tbarLoudness.Location = new System.Drawing.Point(111, 270);
+            this.tbarLoudness.Maximum = 0;
+            this.tbarLoudness.Minimum = -6000;
+            this.tbarLoudness.Name = "tbarLoudness";
+            this.tbarLoudness.Size = new System.Drawing.Size(413, 45);
+            this.tbarLoudness.SmallChange = 5;
+            this.tbarLoudness.TabIndex = 11;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 274);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 13);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Loudness:";
+            // 
+            // tbarSpeechiness
+            // 
+            this.tbarSpeechiness.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarSpeechiness.LargeChange = 10;
+            this.tbarSpeechiness.Location = new System.Drawing.Point(111, 321);
+            this.tbarSpeechiness.Maximum = 100;
+            this.tbarSpeechiness.Name = "tbarSpeechiness";
+            this.tbarSpeechiness.Size = new System.Drawing.Size(413, 45);
+            this.tbarSpeechiness.SmallChange = 5;
+            this.tbarSpeechiness.TabIndex = 13;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(7, 325);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(71, 13);
+            this.label22.TabIndex = 12;
+            this.label22.Text = "Speechiness:";
+            // 
+            // tbarTempo
+            // 
+            this.tbarTempo.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarTempo.LargeChange = 10;
+            this.tbarTempo.Location = new System.Drawing.Point(111, 372);
+            this.tbarTempo.Maximum = 200;
+            this.tbarTempo.Name = "tbarTempo";
+            this.tbarTempo.Size = new System.Drawing.Size(413, 45);
+            this.tbarTempo.SmallChange = 5;
+            this.tbarTempo.TabIndex = 15;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(7, 376);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(43, 13);
+            this.label23.TabIndex = 14;
+            this.label23.Text = "Tempo:";
+            // 
+            // tbarValence
+            // 
+            this.tbarValence.BackColor = System.Drawing.SystemColors.Control;
+            this.tbarValence.LargeChange = 10;
+            this.tbarValence.Location = new System.Drawing.Point(111, 423);
+            this.tbarValence.Maximum = 100;
+            this.tbarValence.Name = "tbarValence";
+            this.tbarValence.Size = new System.Drawing.Size(413, 45);
+            this.tbarValence.SmallChange = 5;
+            this.tbarValence.TabIndex = 17;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(7, 427);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(49, 13);
+            this.label24.TabIndex = 16;
+            this.label24.Text = "Valence:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(10, 460);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(28, 13);
+            this.label25.TabIndex = 18;
+            this.label25.Text = "Key:";
+            // 
+            // txtKey
+            // 
+            this.txtKey.Location = new System.Drawing.Point(111, 457);
+            this.txtKey.Name = "txtKey";
+            this.txtKey.ReadOnly = true;
+            this.txtKey.Size = new System.Drawing.Size(100, 20);
+            this.txtKey.TabIndex = 19;
+            // 
+            // txtTime
+            // 
+            this.txtTime.Location = new System.Drawing.Point(111, 489);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.ReadOnly = true;
+            this.txtTime.Size = new System.Drawing.Size(100, 20);
+            this.txtTime.TabIndex = 21;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(10, 492);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(33, 13);
+            this.label26.TabIndex = 20;
+            this.label26.Text = "Time:";
+            // 
             // LocalControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.proxyGroupBox);
             this.Controls.Add(this.trackInfoBox);
             this.Controls.Add(this.connectBtn);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.bigAlbumPicture);
             this.Name = "LocalControl";
             this.Size = new System.Drawing.Size(970, 670);
-            ((System.ComponentModel.ISupportInitialize)(this.bigAlbumPicture)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.trackInfoBox.ResumeLayout(false);
@@ -629,13 +937,25 @@
             this.proxyGroupBox.ResumeLayout(false);
             this.proxyGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.proxyPortUpDown)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bigAlbumPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarAcousticness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarDanceability)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarEnergy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarInstrumentalness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarLiveness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarLoudness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarSpeechiness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarTempo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbarValence)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox bigAlbumPicture;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button connectBtn;
         private System.Windows.Forms.GroupBox trackInfoBox;
@@ -682,5 +1002,31 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button applyProxyBtn;
         private System.Windows.Forms.NumericUpDown proxyPortUpDown;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.PictureBox bigAlbumPicture;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TrackBar tbarAcousticness;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TrackBar tbarValence;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TrackBar tbarTempo;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TrackBar tbarSpeechiness;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TrackBar tbarLoudness;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TrackBar tbarLiveness;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TrackBar tbarInstrumentalness;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TrackBar tbarEnergy;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TrackBar tbarDanceability;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtKey;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.Label label26;
     }
 }

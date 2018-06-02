@@ -16,7 +16,7 @@ namespace SpotifyAPI.Example
     public partial class WebControl : UserControl
     {
         private readonly ProxyConfig _proxyConfig;
-        private SpotifyWebAPI _spotify;
+        public static SpotifyWebAPI _spotify;
 
         private PrivateProfile _profile;
         private List<FullTrack> _savedTracks;
