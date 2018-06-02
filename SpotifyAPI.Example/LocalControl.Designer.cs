@@ -100,6 +100,7 @@
             this.txtKey = new System.Windows.Forms.TextBox();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.trackInfoBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smallAlbumPicture)).BeginInit();
@@ -664,6 +665,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.label27);
             this.tabPage2.Controls.Add(this.txtTime);
             this.tabPage2.Controls.Add(this.label26);
             this.tabPage2.Controls.Add(this.txtKey);
@@ -918,6 +920,16 @@
             this.label26.TabIndex = 20;
             this.label26.Text = "Time:";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label27.Location = new System.Drawing.Point(149, 516);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(294, 13);
+            this.label27.TabIndex = 22;
+            this.label27.Text = "This feature uses the web API so authentication is necessary";
+            // 
             // LocalControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1028,5 +1040,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
     }
 }
